@@ -1,71 +1,108 @@
 # PDF Answer Extractor
-**ThanhPC***
 
-A Python tool that extracts answers from PDF exam papers using AutoGen framework and DeepSeek LLM API.
+*Author: **ThanhPC***
+
+A Python tool that extracts multiple-choice questions from a PDF exam, detects the correct answers with the help of the DeepSeek LLM, and produces two clean PDF files: one without markings and one with the correct options highlighted.
+
+---
 
 ## Features
 
-- Extracts answers from PDF exam papers with marked answers (highlighted, bold, underlined)
-- Uses DeepSeek LLM for answer detection when visual markers are unclear
-- Generates two output files:
-  - Original questions with all choices (no markers)
-  - Answer key with correct answers
-- Supports both Vietnamese and English interfaces
-- Parallel processing for multiple PDFs
-- Progress tracking and colorful logging
+- Supports PDF files that contain either selectable text or scanned images (OCR fallback).
+- Uses the DeepSeek Chat API to robustly parse questions when visual cues are unreliable.
+- Generates two outputs per input file:
+  - **original_&lt;filename&gt;.pdf** – untouched questions and choices.
+  - **answer2_&lt;filename&gt;.pdf** – the same questions but with the correct option letter in bold.
+- Works with both Vietnamese and English content.
+- Simple caching layer to avoid repeated LLM calls for the same file.
+
+---
+
+## Requirements
+
+- Python 3.9 or newer
+- A free or paid **DeepSeek** API key ([sign up here](https://deepseek.com/))
+
+---
 
 ## Installation
 
-1. Clone repository
+### 1 · Clone the repository
 
 ```bash
 git clone <repo-url>
 cd <repo-directory>
 ```
 
-2. Start virtual environment venv
+### 2 · Create and activate a virtual environment (recommended)
 
-**Windows**
+**Windows (PowerShell)**
 ```powershell
-# Tạo venv
 python -m venv venv
-
-# PowerShell
 ./venv/Scripts/Activate.ps1
+```
 
+**Linux / macOS**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
-3. Install lib
+### 3 · Install dependencies inside the venv
+
 ```bash
 pip install -r requirements.txt
 ```
 
-4. API DeepSeek:
-```bash
-# Windows
-$env:DEEPSEEK_API_KEY = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
+### 4 · Set your DeepSeek API key
 
-## Usage
-1. Place your PDF exam paper in the `input` directory
-2. Run the script:
-```bash
-python auto_exam_pdf.py input/test3test3.pdf
+**PowerShell / Command Prompt**
+```powershell
+$env:DEEPSEEK_API_KEY = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
-Optional arguments:
-- `--lang vi|en`: Set interface language (default: en)
+**Bash / zsh**
+```bash
+export DEEPSEEK_API_KEY="sk-xxxxxxxxxxxxxxxxxxxxxxxx"
+```
+---
+
+## Usage
+
+1. Place one or more PDF files in the `input` directory.
+2. Run the script:
+
+```bash
+python auto_exam_pdf.py input/your_exam.pdf
+```
+
+Optional flags (see `main.py` for full CLI):
+
+| Flag          | Description                              | Default |
+| ------------- | ---------------------------------------- | ------- |
+| `--lang vi|en`| UI language of console logs              | `en`    |
+
+---
 
 ## Output
 
-The script generates two files in the `output` directory:
-- `original_<filename>.pdf`: Questions with all choices (no markers)
-- `answerkey_<filename>.pdf`: Questions with correct answers
+The program creates two files in the `output` directory:
+
+| File pattern                 | Description                               |
+| ---------------------------- | ----------------------------------------- |
+| `original2_<name>.pdf`       | Questions with all choices (no highlight) |
+| `answer2_<name>.pdf`         | Questions with the correct option bolded |
+
+---
 
 ## Example
 
 ```bash
-python auto_exam_pdf.py input/test3.pdf --lang vi
+python auto_exam_pdf.py input/sample_exam.pdf --lang vi
 ```
+
+---
 
 ## License
 
-MIT License 
+This project is licensed under the MIT License. 
