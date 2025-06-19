@@ -1,5 +1,5 @@
 # PDF Answer Extractor
-+*Viết bởi **ThanhPC***
+**ThanhPC***
 
 A Python tool that extracts answers from PDF exam papers using AutoGen framework and DeepSeek LLM API.
 
@@ -23,7 +23,7 @@ git clone <repo-url>
 cd <repo-directory>
 ```
 
-2. Tạo và kích hoạt virtual environment
+2. Start virtual environment venv
 
 **Windows**
 ```powershell
@@ -33,26 +33,18 @@ python -m venv venv
 # PowerShell
 ./venv/Scripts/Activate.ps1
 
-**Linux
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
 
-3. Cài đặt các thư viện phụ thuộc vào môi trường ảo
+3. Install lib
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Thiết lập khóa API DeepSeek:
+4. API DeepSeek:
 ```bash
 # Windows
-set DEEPSEEK_API_KEY=your_api_key_here
-hoặchoặc
 $env:DEEPSEEK_API_KEY = "sk-xxxxxxxxxxxxxxxxxxxxxxxx"
 
 ## Usage
-
 1. Place your PDF exam paper in the `input` directory
 2. Run the script:
 ```bash
@@ -71,7 +63,7 @@ The script generates two files in the `output` directory:
 ## Example
 
 ```bash
-python main.py input/sample_exam.pdf --lang vi
+python auto_exam_pdf.py input/test3.pdf --lang vi
 ```
 
 ## License
