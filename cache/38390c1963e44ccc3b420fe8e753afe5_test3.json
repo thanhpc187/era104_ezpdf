@@ -1,0 +1,252 @@
+[
+  {
+    "question": "Nhiễm khuẩn bệnh viện ư là nhiễm khuẩn xảy ra sau nhập viện :",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "12 giờ",
+        "is_correct": false
+      },
+      {
+        "letter": "B",
+        "text": "24 giờ",
+        "is_correct": false
+      },
+      {
+        "letter": "C",
+        "text": "48 giờ",
+        "is_correct": true
+      },
+      {
+        "letter": "D",
+        "text": "96 giờ",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Nhiễm khuẩn mắc phải trong bệnh viện, NGOẠI TRỪ :",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Một trong những sự cố hay sai sót y khoa có thể gặp phải",
+        "is_correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Tỷ lệ mắc từ 5 – 10% tùy theo quốc gia, vùng, bệnh viện",
+        "is_correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Chi phí điều trị có thể chiếm 1/3 chi phí trong các chi phí về sai sót y khoa",
+        "is_correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Không thể phòng ngừa được",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "Yếu tố nào sau đây KHÔNG làm tăng nguy cơ nhiễm khuẩn bệnh viện:",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Nhiều người bệnh bị nhiễm khuẩn bệnh viện",
+        "is_correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Nhân viên y tế mang nhiều vi khuẩn trên cơ thể như ở đại tràng, khoang miệng.",
+        "is_correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Các người bệnh nhiễm khuẩn các vi khuẩn đa kháng được cách ly",
+        "is_correct": true
+      },
+      {
+        "letter": "D",
+        "text": "Người bệnh nằm viện có hệ thống miễn dịch giảm sút do bệnh hoặc do tuổi, do dùng thuốc hoặc hoá chất gây suy giảm miễn dịch",
+        "is_correct": false
+      }
+    ]
+  },
+  {
+    "question": "Khi xảy ra nhiễm khuẩn bệnh viện tại đơn vị, những nội dung cần thực hiện:",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Xác định xem có đúng là nhiễm khuẩn bệnh viện không và báo cáo với người có trách nhiệm",
+        "is_correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Giám sát xem có những ca khác không",
+        "is_correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Xác định nguyên nhân và can thiệp ngay",
+        "is_correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tất cả câu trên đều đúng",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "Phạm vi tiến hành giám sát nhiễm khuẩn bệnh viện :",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Tại một số khoa trọng điểm",
+        "is_correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Trên một số nhóm bệnh có nguy cơ cao",
+        "is_correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Tại một số khoa trọng điểm hoặc trong toàn bệnh viện",
+        "is_correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Trên một số nhóm bệnh có nguy cơ cao, hoặc tại một số khoa trọng điểm hoặc trong toàn bệnh viện",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "Công tác kiểm soát nhiễn khuẩn bệnh viện là nhiệm vụ của:",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Gíám đốc bệnh viện",
+        "is_correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Trưởng khoa",
+        "is_correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Điều dưỡng trưởng",
+        "is_correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tất cả nhân viên y tế",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "Nội dung cơ bản trong kiểm soát nhiễm khuẩn bệnh viện tại các khoa lâm sàng:",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Thực hành cách ly",
+        "is_correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Phòng ngừa chuẩn",
+        "is_correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Phòng ngừa lây nhiễm cho nhân viên y tế",
+        "is_correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tất cả các câu trên đều đúng",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "Phòng ngừa chuẩn là tập hợp các biện pháp phòng ngừa cơ bản áp dụng cho tất cả người bệnh:",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Phụ thuộc vào chẩn đoán",
+        "is_correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Phụ thuộc vào tình trạng nhiễm trùng",
+        "is_correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Phụ thuộc vào thời điểm chăm sóc của người bệnh",
+        "is_correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tất cả các câu trên đều sai",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "Phòng ngừa chuẩn được áp dụng cho các nhóm người bệnh:",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Chỉ những người bệnh vào viện để phẫu thuật",
+        "is_correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Chỉ những người bệnh HIV/AIDS",
+        "is_correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Chỉ những người bệnh viêm gan B",
+        "is_correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Mọi người bệnh, không phụ thuộc vào người đó có mắc bệnh nhiễm trùng hay không",
+        "is_correct": true
+      }
+    ]
+  },
+  {
+    "question": "Thực hiện Phòng ngừa chuẩn giúp phòng ngừa và kiểm soát lây nhiễm các bệnh nguyên có trong:",
+    "choices": [
+      {
+        "letter": "A",
+        "text": "Máu",
+        "is_correct": false
+      },
+      {
+        "letter": "B",
+        "text": "Chất tiết",
+        "is_correct": false
+      },
+      {
+        "letter": "C",
+        "text": "Chất bài tiết",
+        "is_correct": false
+      },
+      {
+        "letter": "D",
+        "text": "Tất cả các câu trên đều đúng",
+        "is_correct": true
+      }
+    ]
+  }
+]
